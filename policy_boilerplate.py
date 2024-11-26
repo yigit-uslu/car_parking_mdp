@@ -15,7 +15,7 @@ class OptimalPolicy(Policy):
         super().__init__()
 
     def select_action(self, state):
-
+        action = None
         if state == PARKED_STATE:
             action = None
         elif state[0] == 0:
@@ -24,13 +24,7 @@ class OptimalPolicy(Policy):
         # implement this part based on the solution of Bellman's equation
         else:
             ################## TO DO #######################
-            if state[1] == PARK_STATUS_NS.CANNOT_PARK:
-                action = ACTION_SPACE_NS.KEEP_LOOKING
-            else:
-                if state[0] <= 2: # this threshold depends on the values of p and C
-                    action = ACTION_SPACE_NS.PARK
-                else:
-                    action = ACTION_SPACE_NS.KEEP_LOOKING
+            pass
 
             ################## TO DO #######################
 

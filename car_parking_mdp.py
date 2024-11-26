@@ -1,7 +1,7 @@
 import numpy as np
 from collections import defaultdict
 from env import BaseEnv
-from policy import OptimalPolicy, GreedyPolicy, ConservativePolicy
+from car_parking_mdp.policy import OptimalPolicy, GreedyPolicy, ConservativePolicy
 from config import  PARK_STATUS_NS
 
 def main():
